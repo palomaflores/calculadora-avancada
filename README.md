@@ -1,55 +1,57 @@
-# Calculadora Simples
-
-## Descrição
-Este é um programa simples em C que implementa uma calculadora básica. Ele permite que o usuário realize operações matemáticas fundamentais, como soma, subtração, multiplicação e divisão, por meio de um menu interativo.
+# Calculadora em C
+Este é um programa simples em C que oferece uma série de operações matemáticas interativas, permitindo ao usuário realizar cálculos básicos e avançados. As operações incluem soma, subtração, multiplicação, divisão, potência, raiz quadrada, cálculo do resto da divisão e fatorial. O programa funciona com entradas tanto para números decimais quanto inteiros, e garante a proteção contra erros como divisão por zero ou tentativa de calcular a raiz quadrada de números negativos.
 
 ## Funcionalidades
-- Soma de dois números
-- Subtração de dois números
-- Multiplicação de dois números
-- Divisão de dois números (com verificação de divisão por zero)
+O programa possui as seguintes funcionalidades:
 
-## Como Executar
-1. Certifique-se de ter um compilador C instalado (por exemplo, GCC).
-2. Copie o código-fonte para um arquivo chamado `calculadora.c`.
-3. Compile o programa usando o seguinte comando:
-   ```bash
-   gcc calculadora.c -o calculadora
-   ```
-4. Execute o programa:
-   ```bash
-   ./calculadora
-   ```
+- **Soma:** Adiciona dois números.
+- **Subtração:** Subtrai o segundo número do primeiro.
+- **Multiplicação:** Multiplica dois números.
+- **Divisão:** Realiza a divisão de dois números, com verificação de divisão por zero.
+- **Potência:** Calcula a potência de um número elevado a outro.
+- **Raiz Quadrada:** Calcula a raiz quadrada de um número não negativo.
+- **Resto da Divisão:** Calcula o resto da divisão de dois números inteiros.
+- **Fatorial:** Calcula o fatorial de um número inteiro não negativo.
+- **Sair:** Encerra o programa.
 
-## Uso
-Ao executar o programa, um menu será exibido para que o usuário escolha a operação desejada. Após selecionar uma opção, o usuário deve inserir dois números para a operação escolhida. O resultado será exibido na tela.
-
-O programa continuará rodando até que o usuário escolha a opção "5. Sair".
-
-## Exemplo de Saída
-```
+## Como Usar
+1. Ao executar o programa, o usuário será apresentado a um menu com as opções de operações matemáticas.
+2. O usuário escolhe a operação desejada digitando o número correspondente.
+3. Dependendo da operação escolhida, o programa solicitará os números necessários para o cálculo.
+4. O programa executa a operação e exibe o resultado.
+5. O usuário pode continuar realizando operações ou sair do programa selecionando a opção "Sair".
+ 
+###Exemplo de Execução
+```markdown
 Escolha uma operação:
 1. Soma
 2. Subtração
 3. Multiplicação
 4. Divisão
-5. Sair
+5. Potência
+6. Raiz Quadrada
+7. Resto da Divisão
+8. Fatorial
+9. Sair
 Opção: 1
-Digite o primeiro número: 10
-Digite o segundo número: 5
-Resultado: 15.00
+Digite o primeiro número: 5
+Digite o segundo número: 3
+Resultado: 8.00
 ```
 
-## Estrutura do Código
-O programa segue a seguinte estrutura:
-- **Funções de operações matemáticas**: Soma, subtração, multiplicação e divisão.
-- **Verificação de divisão por zero**: Evita erro ao tentar dividir por zero.
-- **Menu interativo**: O loop `do-while` mantém o programa rodando até que o usuário decida sair.
-- **Switch case**: Utilizado para determinar qual operação executar com base na escolha do usuário.
+## Como Funciona o Código
+- **Funções de Operações:** Cada operação (como soma, subtração, etc.) é implementada em funções separadas. Essas funções recebem os números como parâmetros, realizam o cálculo e imprimem o resultado.
 
-## Requisitos
-- Compilador C (GCC, Clang, MinGW, etc.)
-- Terminal para executar o programa
+- **Loop e Menu:** O programa roda em um loop do-while, exibindo um menu de opções até que o usuário escolha sair (opção 9). O menu é repetidamente mostrado após cada operação.
 
-## Autor
-Este projeto foi desenvolvido como um exemplo de programa de calculadora básica em C.
+- **Validação de Erros:** Existem verificações para evitar erros comuns, como a tentativa de divisão por zero ou calcular a raiz quadrada de números negativos.
+
+## Como Compilar e Rodar
+1. Compile o código em um compilador C de sua escolha:
+```bash
+gcc calculadora.c -o calculadora -lm
+```
+2. Execute o programa gerado:
+```back
+./calculadora
+```
