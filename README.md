@@ -1,5 +1,5 @@
-# Calculadora em C
-Este é um programa simples em C que oferece uma série de operações matemáticas interativas, permitindo ao usuário realizar cálculos básicos e avançados. As operações incluem soma, subtração, multiplicação, divisão, potência, raiz quadrada, cálculo do resto da divisão e fatorial. O programa funciona com entradas tanto para números decimais quanto inteiros, e garante a proteção contra erros como divisão por zero ou tentativa de calcular a raiz quadrada de números negativos.
+# Calculadora Avançada
+Este é um programa em lingaugem C que oferece uma série de operações matemáticas interativas, permitindo ao usuário realizar cálculos básicos e avançados. As operações incluem soma, subtração, multiplicação, divisão, potência, raiz quadrada, cálculo do resto da divisão e fatorial. O programa funciona com entradas tanto para números decimais quanto inteiros, e garante a proteção contra erros como divisão por zero ou tentativa de calcular a raiz quadrada de números negativos.
 
 ## Funcionalidades
 O programa possui as seguintes funcionalidades:
